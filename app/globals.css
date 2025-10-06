@@ -1,0 +1,45 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  --font-primary: "Poppins", sans-serif;
+
+  --color-primary: #101828;
+  --color-secondary: #7f56d9;
+  --color-body: #e5e7eb 
+
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+
+  --shadow-primary: 0px 4px 30px rgba(0, 0, 0, 0.08);
+}
+
+body {
+  @apply font-primary bg-body;
+}
+
+.container {
+  @apply px-4 lg:px-8 w-full max-w-320 mx-auto;
+}
+
+.dropdown {
+  @apply w-full lg:max-w-74 cursor-pointer;
+}
+
+.dropdown-btn {
+  @apply flex h-16 items-center px-4.5 border rounded-lg;
+}
+
+.dropdown-icon-primary {
+  @apply text-2xl mr-4.5 text-violet-700;
+}
+
+.dropdown-icon-secondary {
+  @apply text-2xl text-violet-700 ml-auto;
+}
+
+.dropdown-menu {
+  @apply px-6 py-8 text-[15px] space-y-6 shadow-md bg-white absolute w-full z-10 list-none rounded-b-lg;
+}
