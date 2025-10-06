@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 
+import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
+
 import "./globals.css";
 
 const poppins = Poppins({
@@ -25,9 +28,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="bg-html">
       <body className={`${poppins.variable} antialiased`}>
+        <Header />
         {children}
+        <Footer />
         <Analytics />
       </body>
     </html>

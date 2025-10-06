@@ -6,7 +6,8 @@
 
   --color-primary: #101828;
   --color-secondary: #7f56d9;
-  --color-body: #e5e7eb 
+  --color-html: #e5e7eb;
+  --color-white: #ffffff;
 
   --breakpoint-sm: 640px;
   --breakpoint-md: 768px;
@@ -17,11 +18,23 @@
 }
 
 body {
-  @apply font-primary bg-body;
+  @apply w-full max-w-360 mx-auto font-primary bg-white;
 }
 
 .container {
   @apply px-4 lg:px-8 w-full max-w-320 mx-auto;
+}
+
+.btn {
+  @apply py-3 px-4 rounded-lg cursor-pointer transition-colors duration-300;
+}
+
+.btn-primary {
+  @apply bg-violet-700 hover:bg-violet-800 text-white;
+}
+
+.btn-secondary {
+  @apply hover:text-violet-800;
 }
 
 .dropdown {
