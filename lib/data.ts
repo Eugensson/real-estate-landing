@@ -51,7 +51,7 @@ import Agent10 from "@/public/assets/agents/agent10.png";
 import Agent11 from "@/public/assets/agents/agent11.png";
 import Agent12 from "@/public/assets/agents/agent12.png";
 
-import { House } from "@/types";
+import { House, PriceRangeItem } from "@/types";
 
 export const housesData: House[] = [
   {
@@ -432,4 +432,14 @@ export const housesData: House[] = [
       phone: "0123 456 78910",
     },
   },
+];
+
+export const pricesData: PriceRangeItem[] = [
+  { value: "All price ranges", label: "All price ranges" },
+  { value: "100000 - 130000", label: "$ 100,000 - $ 130,000" },
+  { value: "130000 - 160000", label: "$ 130,000 - $ 160,000" },
+  { value: "160000 - 190000", label: "$ 160,000 - $ 190,000" },
+  { value: "190000 - 220000", label: "$ 190,000 - $ 220,000" },
+  { value: "10000 - 30000", label: "$ 10,000 - $ 30,000" },
+  { value: "30000 - 40000", label: "$ 30,000 - $ 40,000" },
 ];

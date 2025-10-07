@@ -9,6 +9,7 @@ export const Logo = () => {
         alt="HomeLand's logo"
         width={150}
         height={30}
+        className="w-full h-full object-contain"
       />
     </Link>
   );

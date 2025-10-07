@@ -26,11 +26,11 @@ body {
 }
 
 .btn {
-  @apply py-3 px-4 rounded-lg cursor-pointer transition-colors duration-300;
+  @apply py-3 px-4 rounded-lg;
 }
 
 .btn-primary {
-  @apply bg-violet-700 hover:bg-violet-800 text-white;
+  @apply bg-violet-700 hover:bg-violet-800 cursor-pointer text-white transition-colors duration-300;
 }
 
 .btn-secondary {
@@ -42,7 +42,7 @@ body {
 }
 
 .dropdown-btn {
-  @apply flex h-16 items-center px-4.5 border rounded-lg;
+  @apply flex h-16 items-center px-4.5 border border-gray-300 rounded-lg outline-none cursor-pointer;
 }
 
 .dropdown-icon-primary {
@@ -54,5 +54,5 @@ body {
 }
 
 .dropdown-menu {
-  @apply px-6 py-8 text-[15px] space-y-6 shadow-md bg-white absolute w-full z-10 list-none rounded-b-lg;
+  @apply px-6 py-8 text-[15px] space-y-6 shadow-md bg-white absolute w-full z-10 list-none rounded-b-lg outline-none;
 }

@@ -4,6 +4,7 @@ import { Analytics } from "@vercel/analytics/next";
 
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
+import { HouseContextProvider } from "@/components/house-context";
 
 import "./globals.css";
 
@@ -28,13 +29,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="bg-html">
-      <body className={`${poppins.variable} antialiased`}>
-        <Header />
-        {children}
-        <Footer />
-        <Analytics />
-      </body>
-    </html>
+    <HouseContextProvider>
+      <html lang="en" className="bg-html">
+        <body className={`${poppins.variable} antialiased`}>
+          <Header />
+          {children}
+          <Footer />
+          <Analytics />
+        </body>
+      </html>
+    </HouseContextProvider>
   );
 }

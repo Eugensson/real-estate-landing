@@ -24,3 +24,8 @@ export type House = {
   price: number;
   agent: Agent;
 };
+
+export type PriceRangeItem = {
+  value: string;
+  label: string;
+};

@@ -24,6 +24,7 @@ export const Banner = () => {
             width={705}
             height={646}
             alt="banner"
+            className="w-full h-full object-cover"
           />
         </div>
       </div>
