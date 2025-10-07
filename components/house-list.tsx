@@ -19,7 +19,7 @@ export const HouseList = () => {
 
   if (houses.length < 1)
     return (
-      <div className="mt-48 text-3xl text-center text-gray-400">
+      <div className="mt-60 text-3xl text-center text-gray-400">
         Sorry, nothing found.
       </div>
     );

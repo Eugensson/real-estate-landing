@@ -1,7 +1,9 @@
 export const Footer = () => {
   return (
-    <footer>
-      <div className="container">Footer</div>
+    <footer className="py-8 bg-black text-center text-white">
+      <div className="container">
+        Copyright &copy; 2025 RealEstate. All rights reserved.
+      </div>
     </footer>
   );
 };
