@@ -25,6 +25,14 @@ body {
   @apply px-4 lg:px-8 w-full max-w-320 mx-auto;
 }
 
+.input {
+  @apply px-4 h-14 w-full border border-gray-300 focus:border-violet-700 outline-none rounded text-sm placeholder:text-gray-400 transition-colors duration-300;
+}
+
+.textarea {
+  @apply p-4 h-36 w-full border border-gray-300 focus:border-violet-700 outline-none rounded text-sm placeholder:text-gray-400 transition-colors duration-300 resize-none;
+}
+
 .btn {
   @apply py-3 px-4 rounded-lg;
 }
